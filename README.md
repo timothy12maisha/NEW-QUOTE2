@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/timothy12maisha/NEW-QUOTE2) version 8.3.22.
 
+## Author
+Timothy Maina Kihara
+
+## Codebeat
+[![codebeat badge](https://codebeat.co/badges/faf4652a-b67d-4909-8b32-b6f9cfe70668)](https://codebeat.co/projects/github-com-timothy12maisha-new-quote2-master)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
