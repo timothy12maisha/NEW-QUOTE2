@@ -1,0 +1,27 @@
+<div class="container" >
+    <h1>QUOTES</h1>
+    <hr>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+   </div>
+      <div id="results1" class="col-md-6">
+        <div *ngFor='let quote of quotes;let i = index'>
+          <div>
+            <h6 class="quotehead" id={{i}} appStrikethrough>Author:{{quote.Author}}</h6>
+            <h5>{{quote.Submitter}}</h5>
+          </div>
+          <div *ngIf='quote.showDescription'>
+            <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
+          </div>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+          <br>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+    <p *ngIf='quotes.length > 5'>You have too many quotes</p>
+  </div>
